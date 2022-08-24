@@ -1,0 +1,27 @@
+.tables {
+  display: flex;
+  flex-direction: row;
+}
+.table {
+  width: 33.33%;
+  text-align: center;
+  color: #666666;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.row-title {
+  font-weight: 500;
+}
+.row-info {
+  font-weight: 200;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 735px) {
+  .table {
+    width: 50%;
+  }
+}

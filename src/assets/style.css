@@ -1,0 +1,344 @@
+.banner-instruction {
+    background-image: url(https://digital.clarochile.cl/wcm-inyect/cotizador-hogar/assets/img/bg-comparador-hogar.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    height: 456px;
+    padding: 0px;
+}
+
+.gradient-css {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient( to left, rgba(0, 0, 0, 29%), rgba(0, 0, 0, 2%));
+    height: 456px;
+    position: absolute;
+}
+
+.banner-instruction .container-txt {
+    width: 100%;
+    max-width: 1082px;
+    margin: 0 auto;
+    height: 456px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.link-plan{
+    color: #0097a9;
+    text-decoration: none;
+}
+
+.container-txt h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    max-width: 515px;
+    z-index: 1;
+    line-height: 1.2;
+}
+
+.principal-title{
+    color: #666666;
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.principal-subtitle{
+    color: #B1B1B1;
+    font-size: 25px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: left;
+}
+
+.secundary-title{
+    color: #B1B1B1;
+    font-size: 20px!important;
+    line-height: 1.5!important;
+    font-weight: 500;
+}
+
+.comparator-container{
+    width: 100%;
+    background: #ffffff!important;
+}
+
+.comparator-wrapper{
+    max-width: 815px;
+    width: 90%;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.border-table-star {
+    padding-top: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #B1B1B1;
+    margin-bottom: 28px!important;
+}
+
+.container-comparator-select{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-select{
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper-select{
+    width: 33.3%;
+}
+
+.select-plan {
+    border: 1px solid #707070;
+    background: white;
+    border-radius: 5px;
+    color: #666666;
+    padding: 10px;
+    width: 95%;
+    margin-bottom: 15px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-image: url(https://digital.clarochile.cl/wcm-inyect/cotizador-hogar/assets/img/ico-arrow-blue.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 94% center;
+    padding-right: 45px!important;
+}
+
+.border-table {
+    padding-top: 38px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #B1B1B1;
+    margin-bottom: 28px!important;
+}
+
+.txt-table{
+    display: flex;
+    flex-direction: row;
+}
+
+.txt-table div {
+    width: 33.3%;
+    text-align: center;
+    color: #666666;
+    font-size: 16px;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.txt-table .txt-plan {
+    width: 33.3%;
+    text-align: center;
+    color: #666666;
+    font-size: 16px;
+    font-weight: 300; 
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.img-rrss{
+    width: 110px;
+}
+
+.hide-mobile {
+    display: block;
+}
+
+@media (max-width: 735px) {
+    .banner-instruction {
+        background-image: url(https://digital.clarochile.cl/wcm-inyect/cotizador-hogar/assets/img/bg-comparador-hogar.jpg);
+        background-position: -370px center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 1920px;
+        width: 100%;
+        margin: 0 auto;
+        height: 456px;
+        padding: 0px;
+    }
+    
+    .hide-mobile {
+        display: none;
+    }
+    
+    .wrapper-select{
+        width: 50%;
+    }
+
+    .txt-table div {
+        width: 50%;
+        text-align: center;
+        color: #666666;
+        font-size: 16px;
+        box-sizing: border-box;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .txt-table .txt-plan {
+        width: 50%;
+        text-align: center;
+        color: #666666;
+        font-size: 16px;
+        font-weight: 300;
+        padding-top: 5px;
+        padding-bottom: 20px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .banner-instruction {
+        background-position: -307px center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 1920px;
+        width: 100%;
+        margin: 0 auto;
+        height: 350px;
+        padding: 0px;
+    }
+
+    .gradient-css {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 1920px;
+        width: 100%;
+        margin: 0 auto;
+        background: linear-gradient( to top, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.16));
+        height: 350px;
+        position: absolute;
+    }
+
+    .banner-instruction .container-txt {
+        width: 90%;
+        max-width: 1082px;
+        margin: 0 auto;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .container-txt h2 {
+        color: #ffffff;
+        font-size: 27px;
+        font-weight: 400;
+        max-width: 515px;
+        z-index: 1;
+        padding-bottom: 32px;
+        line-height: 1.2;
+    }
+
+    .comparator-wrapper {
+        max-width: 815px;
+        width: 90%;
+        background-color: #ffffff;
+        margin: 0 auto;
+    }
+
+    .principal-title {
+        color: #666666;
+        font-size: 25px;
+        line-height: 1.5;
+        font-weight: 200;
+    }
+
+    .principal-subtitle {
+        color: #B1B1B1;
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .border-table {
+    padding-top: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #B1B1B1;
+    margin-bottom: 28px;
+    }
+
+    .select-plan {
+        border: 1px solid #707070;
+        background: white;
+        border-radius: 5px;
+        color: #666666;
+        padding: 10px;
+        width: 95%;
+        margin-bottom: 15px;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        background-image: url(https://digital.clarochile.cl/wcm-inyect/cotizador-hogar/assets/img/ico-arrow-blue.svg);
+        background-size: 15px;
+        background-repeat: no-repeat;
+        background-position: 94% center;
+        padding-right: 45px!important;
+    }
+
+    .txt-table div {
+        width: 50%;
+        text-align: center;
+        color: #666666;
+        font-size: 16px;
+        box-sizing: border-box;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .txt-table .txt-plan {
+        width: 50%;
+        text-align: center;
+        color: #666666;
+        font-size: 16px;
+        font-weight: 300;
+        padding-top: 5px;
+        padding-bottom: 20px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .principal-title {
+        color: #666666;
+        font-size: 22px;
+        line-height: 1.5;
+        font-weight: 200;
+    }
+}
