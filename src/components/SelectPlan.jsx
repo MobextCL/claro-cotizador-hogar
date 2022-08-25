@@ -25,7 +25,6 @@ const SelectPlan = ({
         className={`select-plan ${type}`}
         name={id}
         id={id}
-        value={value}
         onChange={onComboChange ? onComboChange : onPlanChange}
       >
         {type === "combos"
