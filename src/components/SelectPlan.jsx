@@ -26,10 +26,15 @@ const SelectPlan = ({
         name={id}
         id={id}
         onChange={onComboChange ? onComboChange : onPlanChange}
+        defaultValue={type === "combos" ? value : false}
       >
         {type === "combos"
           ? combos.map((option) => (
-              <option key={option.value} value={option.value}>
+              <option
+                key={option.value}
+                value={option.value}
+                // selected={option.value === value ? true : false}
+              >
                 {option.name}
               </option>
             ))

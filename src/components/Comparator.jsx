@@ -47,21 +47,23 @@ const Comparator = () => {
 
           // Agrego sufijo a velocidades y cuota
           plan.velocidad_bajada_mbps =
-            plan.velocidad_bajada_mbps && `${plan.velocidad_bajada_mbps} Mbps`;
+            plan.velocidad_bajada_mbps &&
+            `${plan.velocidad_bajada_mbps.toLocaleString()} Mbps`;
           plan.velocidad_subida_mbps =
-            plan.velocidad_subida_mbps && `${plan.velocidad_subida_mbps} Mbps`;
+            plan.velocidad_subida_mbps &&
+            `${plan.velocidad_subida_mbps.toLocaleString()} Mbps`;
           plan.velocidad_bajada_promedio_nacional_mbps =
             plan.velocidad_bajada_promedio_nacional_mbps &&
-            `${plan.velocidad_bajada_promedio_nacional_mbps} Mbps`;
+            `${plan.velocidad_bajada_promedio_nacional_mbps.toLocaleString()} Mbps`;
           plan.velocidad_bajada_promedio_internacional_mbps =
             plan.velocidad_bajada_promedio_internacional_mbps &&
-            `${plan.velocidad_bajada_promedio_internacional_mbps} Mbps`;
+            `${plan.velocidad_bajada_promedio_internacional_mbps.toLocaleString()} Mbps`;
           plan.velocidad_subida_promedio_nacional_mbps =
             plan.velocidad_subida_promedio_nacional_mbps &&
-            `${plan.velocidad_subida_promedio_nacional_mbps} Mbps`;
+            `${plan.velocidad_subida_promedio_nacional_mbps.toLocaleString()} Mbps`;
           plan.velocidad_subida_promedio_internacional_mbps =
             plan.velocidad_subida_promedio_internacional_mbps &&
-            `${plan.velocidad_subida_promedio_internacional_mbps} Mbps`;
+            `${plan.velocidad_subida_promedio_internacional_mbps.toLocaleString()} Mbps`;
           plan.cuota_de_navegacion_gb =
             (plan.cuota_de_navegacion_gb != null) &
             !isNaN(plan.cuota_de_navegacion_gb)
