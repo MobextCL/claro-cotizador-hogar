@@ -20,6 +20,7 @@ const ofertaComercial = [
   { name: "Descuento Televisión", field: "descuento_television" },
   { name: "Descuento Telefonía", field: "descuento_telefonia" },
   { name: "Costo de instalación", field: "costo_de_instalacion" },
+  { name: "", field: "text_instalacion" },
 ];
 
 const descripcionInternet = [
@@ -68,7 +69,10 @@ const descripcionTelefonia = [
   { name: "Valor Minuto Adicional", field: "valor_del_min_adicional" },
   { name: "Valor SMS adicional", field: "valor_sms_adicional" },
   { name: "Bolsas", field: "bolsas" },
-  { name: "Características Diferenciadoras", field: "otras_caracteristicas_diferenciadoras" },
+  {
+    name: "Características Diferenciadoras",
+    field: "otras_caracteristicas_diferenciadoras",
+  },
 ];
 
 const Tabla = ({ selectedPlans, title }) => {
@@ -89,11 +93,22 @@ const Tabla = ({ selectedPlans, title }) => {
         {selectedPlans.map(
           (plan, i) =>
             plan != undefined && (
-              <div key={`${plan.id}-${i}`} className={i === 2 ? "table hide-mobile" : "table"}>
+              <div
+                key={`${plan.id}-${i}`}
+                className={i === 2 ? "table hide-mobile" : "table"}
+              >
                 {campos.map((item) => (
                   <div key={item.field}>
                     <div className="row-title">{item.name}</div>
-                    <div className=" row-info">{plan[`${item.field}`] ? plan[`${item.field}`] : "No Aplica"}</div>
+                    <div
+                      className={
+                        item.name === "Plan" ? "row-info planclass" : "row-info"
+                      }
+                    >
+                      {plan[`${item.field}`]
+                        ? plan[`${item.field}`]
+                        : "No Aplica"}
+                    </div>
                   </div>
                 ))}
               </div>

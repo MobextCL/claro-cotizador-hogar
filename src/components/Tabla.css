@@ -19,6 +19,9 @@
   padding-top: 5px;
   padding-bottom: 20px;
 }
+.planclass {
+  min-height: 35px;
+}
 
 @media (max-width: 735px) {
   .table {
